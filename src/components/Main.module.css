@@ -1,0 +1,138 @@
+.wrapperMain{
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+
+  width: 46rem;
+}
+
+.wrapperInput {
+  display: flex;
+  margin: -1.7rem 0 4rem;
+  gap: 8px;
+}
+
+.wrapperInput input {
+  height: 3.4rem;
+  width: 40rem;
+
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: var(--gray-300);
+
+  border-radius: 8px;
+
+  border: none;
+
+  background-color: var(--gray-500);
+}
+
+.wrapperInput button {
+  height: 3.4rem;
+  width: 5.6rem;
+
+  border-radius: 8px;
+  
+
+  border: none;
+  cursor: pointer;
+
+  background-color: var(--blue-dark);
+
+  color: var(--gray-100);
+  font-weight: bold;
+  font-size: 0.875rem;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.wrapperInput button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.wrapperInput button:not(:disabled):hover {
+  background-color: var(--blue);
+}
+
+.tasksDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.tasksDetails .tasksCreated {
+  display: flex;
+  gap: 8px;
+}
+
+.tasksCreated p {
+  color: var(--blue);
+
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.tasksCreated span,
+.tasksDone span {
+  min-width: 1.625rem;
+  min-height: 1.1875rem;
+  padding: 0 0.5rem;
+
+  border-radius: 999px;
+
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: 0.75rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tasksDetails .tasksDone {
+  display: flex;
+  gap: 8px;
+}
+
+.tasksDone p {
+  color: var(--purple);
+
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.tasksList {
+  padding: 4rem 0 4rem;
+  border-top: 1px solid var(--gray-100);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.750rem;
+
+}
+
+.taskListDisabled {
+  display: flex;
+
+  border: none;
+
+  padding: 0rem 0 4rem;
+}
+
+
+.noTasks p:first-of-type {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
